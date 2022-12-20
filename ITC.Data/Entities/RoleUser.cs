@@ -6,7 +6,7 @@ namespace ITC.Data.Entities
 {
 	public class RoleUser
 	{
-        [Key]
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid RoleUserId { get; set; }
         public Guid RolesId { get; set; }
         public Guid UsersId { get; set; }

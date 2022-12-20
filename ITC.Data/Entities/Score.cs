@@ -9,13 +9,12 @@ namespace ITC.Data.Entities
 {
     public class Score
     {
-
-        [Key]
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid Id { get; set; }
         public string? Name { get; set; }
         public string? Percent { get; set; }
         public string? Minimumpass { get; set; }
-        public string? ParentId { get; set; }
+        public Guid ParentId { get; set; }
 
     }
 }

@@ -9,7 +9,7 @@ namespace ITC.Data.Entities
 {
     public class Project
     {
-        [Key]
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid Id { get; set; }
         public string? ProjectName { get; set; }
         public string? Description { get; set; }

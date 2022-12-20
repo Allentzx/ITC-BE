@@ -9,7 +9,7 @@ namespace ITC.Data.Entities
 {
     public class PartnersInformation
     {
-        [Key]
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid Id { get; set; }
         public string? PartnerName { get; set; }
         public string? Contact { get; set; }

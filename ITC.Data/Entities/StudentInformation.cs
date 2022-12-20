@@ -9,7 +9,7 @@ namespace ITC.Data.Entities
 {
     public class StudentInformation
     {
-        [Key]
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid Id { get; set; }
         public string? Email { get; set; }
         public string? Phone { get; set; }

@@ -9,7 +9,7 @@ namespace ITC.Data.Entities
 {
     public class Payment
     {
-        [Key]
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid Id { get; set; }
         public string? PaymentTo { get; set; }
         public string? BankAccountBeneficiary { get; set; }
