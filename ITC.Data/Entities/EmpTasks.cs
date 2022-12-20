@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ITC.Data.Entities
 {
-    public class Task
+    public class EmpTasks
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid Id { get; set; }
