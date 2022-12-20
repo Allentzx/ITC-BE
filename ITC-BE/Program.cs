@@ -1,6 +1,9 @@
 ﻿using AutoMapper;
 using ITC.Core.Data;
+using ITC.Core.Interface;
 using ITC.Core.Mapper;
+using ITC.Core.Service;
+using ITC.Core.Utilities;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -34,6 +37,10 @@ builder.Services.AddSingleton(new MapperConfiguration(mc =>
 
 //Service
 builder.Services.AddTransient<IHttpContextAccessor, HttpContextAccessor>();
+builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
+builder.Services.AddScoped<ILoginService, LoginService>();
+builder.Services.AddTransient<IUserContextService, UserContextService>();
+
 
 //Swagger
 builder.Services.AddSwaggerGen(c =>
@@ -62,9 +69,9 @@ builder.Services.AddSwaggerGen(c =>
             Array.Empty<string>()
         }
     });
-    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-    c.IncludeXmlComments(xmlPath);
+    //var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    //var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    //c.IncludeXmlComments(xmlPath);
 });
 
 //Authentication JWT

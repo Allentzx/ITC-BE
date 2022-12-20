@@ -1,35 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\OneDrive\\Desktop\\ITC\\ITC-BE\\ITC.Core\\ITC.Core.csproj": {}
+    "/Users/apple/Desktop/ITC-BE/ITC.Core/ITC.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\OneDrive\\Desktop\\ITC\\ITC-BE\\ITC.Core\\ITC.Core.csproj": {
+    "/Users/apple/Desktop/ITC-BE/ITC.Core/ITC.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\OneDrive\\Desktop\\ITC\\ITC-BE\\ITC.Core\\ITC.Core.csproj",
+        "projectUniqueName": "/Users/apple/Desktop/ITC-BE/ITC.Core/ITC.Core.csproj",
         "projectName": "ITC.Core",
-        "projectPath": "C:\\Users\\Admin\\OneDrive\\Desktop\\ITC\\ITC-BE\\ITC.Core\\ITC.Core.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\OneDrive\\Desktop\\ITC\\ITC-BE\\ITC.Core\\obj\\",
+        "projectPath": "/Users/apple/Desktop/ITC-BE/ITC.Core/ITC.Core.csproj",
+        "packagesPath": "/Users/apple/.nuget/packages/",
+        "outputPath": "/Users/apple/Desktop/ITC-BE/ITC.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/apple/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\OneDrive\\Desktop\\ITC\\ITC-BE\\ITC.Data\\ITC.Data.csproj": {
-                "projectPath": "C:\\Users\\Admin\\OneDrive\\Desktop\\ITC\\ITC-BE\\ITC.Data\\ITC.Data.csproj"
+              "/Users/apple/Desktop/ITC-BE/ITC.Data/ITC.Data.csproj": {
+                "projectPath": "/Users/apple/Desktop/ITC-BE/ITC.Data/ITC.Data.csproj"
               }
             }
           }
@@ -48,6 +46,10 @@
               "target": "Package",
               "version": "[12.0.0, )"
             },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.9, )"
@@ -61,6 +63,14 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.9, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.25.1, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.12.0, )"
             }
           },
           "imports": [
@@ -69,7 +79,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -78,28 +89,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Admin\\OneDrive\\Desktop\\ITC\\ITC-BE\\ITC.Data\\ITC.Data.csproj": {
+    "/Users/apple/Desktop/ITC-BE/ITC.Data/ITC.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\OneDrive\\Desktop\\ITC\\ITC-BE\\ITC.Data\\ITC.Data.csproj",
+        "projectUniqueName": "/Users/apple/Desktop/ITC-BE/ITC.Data/ITC.Data.csproj",
         "projectName": "ITC.Data",
-        "projectPath": "C:\\Users\\Admin\\OneDrive\\Desktop\\ITC\\ITC-BE\\ITC.Data\\ITC.Data.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\OneDrive\\Desktop\\ITC\\ITC-BE\\ITC.Data\\obj\\",
+        "projectPath": "/Users/apple/Desktop/ITC-BE/ITC.Data/ITC.Data.csproj",
+        "packagesPath": "/Users/apple/.nuget/packages/",
+        "outputPath": "/Users/apple/Desktop/ITC-BE/ITC.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/apple/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -117,13 +126,20 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -132,7 +148,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

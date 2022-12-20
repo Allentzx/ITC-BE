@@ -15,7 +15,8 @@ namespace ITC.Data.Entities
         public string? ImgUrl { get; set; }
         public DateTime DateCreated { get; set; }
         public DateTime DateUpdated { get; set; }
-        public bool IsActive { get; set; } 
+        public bool IsActive { get; set; }
+        public virtual ICollection<RoleUser> RoleUsers { get; set; }
     }
 }
 
