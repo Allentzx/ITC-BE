@@ -22,7 +22,6 @@ namespace ITC.Core.Data
         public DbSet<RoleUser> RoleUsers { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<SubCategory> SubCategories { get; set; }
-        public DbSet<Comment> Comments { get; set; }
         public DbSet<CoursePlans> CoursePlans { get; set; }
         public DbSet<EmpTasks> EmpTasks { get; set; }
         public DbSet<Exam> Exams { get; set; }

@@ -13,5 +13,8 @@ namespace ITC.Data.Entities
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid Id { get; set; }
         public string? TaskName { get; set; }
+        public Guid ProjectId { get; set; }
+        [ForeignKey("ProjectId")]
+        public virtual Project? Project { get; set; }
     }
 }

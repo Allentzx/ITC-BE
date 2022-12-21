@@ -15,5 +15,11 @@ namespace ITC.Data.Entities
         public string? Content { get; set; }
         public DateTime? StartTime { get; set; }
         public DateTime? EndTime { get; set; }
+        public Guid SchoolId { get; set; }
+        [ForeignKey("SchoolId")]
+        public Guid SubId { get; set; }
+        [ForeignKey("SubId")]
+        public virtual SubCategory? SubCategories { get; set; }
+        public virtual Schools? Schools { get; set; }
     }
 }

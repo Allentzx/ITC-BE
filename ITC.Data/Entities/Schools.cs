@@ -14,5 +14,12 @@ namespace ITC.Data.Entities
         public Guid Id { get; set; }
         public string? SchoolName { get; set; }
         public string? Address { get; set; }
+        public Guid ProjectId { get; set; }
+        [ForeignKey("ProjectId")]
+        public virtual Project? Projects { get; set; }
+        public virtual ICollection<Images>? Images { get; set; }
+        public virtual ICollection<Payment>? Payments { get; set; }
+        public virtual ICollection<LessonPlan>? LessonPlans { get; set; }
+        public virtual ICollection<StudentInformation>? StudentInformations { get; set; }
     }
 }

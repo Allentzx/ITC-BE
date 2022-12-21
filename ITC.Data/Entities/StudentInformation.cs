@@ -23,5 +23,17 @@ namespace ITC.Data.Entities
         public string? ImageBillTuitionFee { get; set; }
         public string? PercentAccept { get; set; }
         public DateTime BirthDay { get; set; }
+        public Guid UserId { get; set; }
+        [ForeignKey("UserId")]
+        public Guid SubId { get; set; }
+        [ForeignKey("SubId")]
+        public Guid ExamId { get; set; }
+        [ForeignKey("ExamId")]
+        public Guid SchoolId { get; set; }
+        [ForeignKey("SchoolId")]
+        public virtual Schools? Schools { get; set; }
+        public virtual Exam? Exams { get; set; }
+        public virtual SubCategory? SubCategories { get; set; }
+        public virtual User? Users { get; set; }
     }
 }

@@ -16,7 +16,6 @@ namespace ITC.Data.Entities
         public string? PostDay { get; set; }
         public string? Author { get; set; }
         public string? Information { get; set; }
-        public virtual ICollection<Comment>? Comments { get; set; }
         public virtual ICollection<Images>? Images { get; set; }
 
     }

@@ -13,5 +13,11 @@ namespace ITC.Data.Entities
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid Id { get; set; }
         public string? Url { get; set; }
+        public Guid ReviewId { get; set; }
+        [ForeignKey("ReviewId")]
+        public Guid SchooldId { get; set; }
+        [ForeignKey("SchooldId")]
+        public virtual Review? Reviews { get; set; }
+        public virtual Schools? Schools { get; set; }
     }
 }

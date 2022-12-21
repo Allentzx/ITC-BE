@@ -24,7 +24,12 @@ namespace ITC.Data.Entities
         public string? Introduction { get; set; }
         public Guid CoursePlanId { get; set; }
         [ForeignKey("CoursePlanId")]
+        public Guid SubId { get; set; }
+        [ForeignKey("SubId")]
+        public virtual SubCategory? SubCategories { get; set; }
         public virtual CoursePlans? CoursePlans { get; set; }
         public virtual ICollection<PartnersInformation>? PartnersInformations { get; set; }
+        public virtual ICollection<Schools>? Schools { get; set; }
+        public virtual ICollection<EmpTasks>? EmpTasks { get; set; }
     }
 }
