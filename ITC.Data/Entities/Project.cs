@@ -14,14 +14,17 @@ namespace ITC.Data.Entities
         public Guid Id { get; set; }
         public string? ProjectName { get; set; }
         public string? Description { get; set; }
-        public int TotalStudent { get; set; }
-        public int TotalStaff { get; set; }
+        public string? TotalStudent { get; set; }
+        public string? TotalStaff { get; set; }
         public string? Leader { get; set; }
         public string? Localtion { get; set; }
         public string? MyProperty { get; set; }
         public DateTime Time { get; set; }
         public DateTime MountOfTime { get; set; }
         public string? Introduction { get; set; }
-
+        public Guid CoursePlanId { get; set; }
+        [ForeignKey("CoursePlanId")]
+        public virtual CoursePlans? CoursePlans { get; set; }
+        public virtual ICollection<PartnersInformation>? PartnersInformations { get; set; }
     }
 }

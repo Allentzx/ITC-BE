@@ -16,5 +16,8 @@ namespace ITC.Data.Entities
         public string? Contact { get; set; }
         public string? Features { get; set; }
         public string? Notes { get; set; }
+        public Guid ProjectId { get; set; }
+        [ForeignKey("ProjectId")]
+        public virtual Project? Projects { get; set; }
     }
 }
