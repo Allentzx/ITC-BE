@@ -23,7 +23,6 @@ namespace ITC_BE.Controller
         public async Task<IActionResult> Login(LoginRequest loginRequest)
         {
             var user = _loginService.AuthenticateUser(loginRequest.UserName, loginRequest.Password);
-
             try
             {
                 if (user != null)

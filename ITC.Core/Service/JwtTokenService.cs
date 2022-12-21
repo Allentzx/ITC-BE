@@ -48,12 +48,12 @@ namespace ITC.Core.Service
         {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));  //Mã hóa Key trong appsetting.json
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);   //Giải thuật encode: HMAC SHA-256
-
+            var studentInformation = new StudentInformation();
             var claims = new List<Claim>
             {
                 new Claim("UserName" , account.Username),
-                new Claim("Email", account.Email ?? ""),
-                new Claim("FullName", account.FullName),
+                new Claim("Email", studentInformation.Email ?? ""),
+                new Claim("FullName", studentInformation.FullName),
                 new Claim("UserId", account.Id.ToString()),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())  //JWT ID
             };
@@ -72,15 +72,15 @@ namespace ITC.Core.Service
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
-        public Task<string> GenerateTokenDMSAsync(User account)
+        public Task<string> GenerateTokenDMSAsync(User account, StudentInformation studentInformation)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_configuration["JWT-DMS:Secret"]));
 
             var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.Name , account.Username),
-                new Claim(ClaimTypes.Email, account.Email ?? ""),
-                new Claim("FullName", account.FullName),
+                new Claim(ClaimTypes.Email, studentInformation.Email ?? ""),
+                new Claim("FullName", studentInformation.FullName),
                 new Claim(ClaimTypes.NameIdentifier, account.Id.ToString())
             };
 
