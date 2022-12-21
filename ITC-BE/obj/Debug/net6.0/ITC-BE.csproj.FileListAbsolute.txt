@@ -303,3 +303,12 @@ C:/Users/Admin/OneDrive/Desktop/ITC/ITC-BE/ITC-BE/obj/Debug/net6.0/ref/ITC-BE.dl
 /Users/apple/Desktop/ITC-BE/ITC-BE/obj/Debug/net6.0/ref/ITC-BE.dll
 /Users/apple/Desktop/ITC-BE/ITC-BE/bin/Debug/net6.0/Microsoft.IdentityModel.Abstractions.dll
 /Users/apple/Desktop/ITC-BE/ITC-BE/bin/Debug/net6.0/Serilog.dll
+C:\Users\Admin\OneDrive\Desktop\ITC\ITC-BE\ITC-BE\obj\Debug\net6.0\ITC-BE.csproj.AssemblyReference.cache
+C:\Users\Admin\OneDrive\Desktop\ITC\ITC-BE\ITC-BE\obj\Debug\net6.0\ITC-BE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\OneDrive\Desktop\ITC\ITC-BE\ITC-BE\obj\Debug\net6.0\ITC-BE.AssemblyInfoInputs.cache
+C:\Users\Admin\OneDrive\Desktop\ITC\ITC-BE\ITC-BE\obj\Debug\net6.0\ITC-BE.AssemblyInfo.cs
+C:\Users\Admin\OneDrive\Desktop\ITC\ITC-BE\ITC-BE\obj\Debug\net6.0\ITC-BE.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Desktop\ITC\ITC-BE\ITC-BE\obj\Debug\net6.0\ITC-BE.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Admin\OneDrive\Desktop\ITC\ITC-BE\ITC-BE\obj\Debug\net6.0\ITC-BE.dll
+C:\Users\Admin\OneDrive\Desktop\ITC\ITC-BE\ITC-BE\obj\Debug\net6.0\refint\ITC-BE.dll
+C:\Users\Admin\OneDrive\Desktop\ITC\ITC-BE\ITC-BE\obj\Debug\net6.0\ITC-BE.pdb
