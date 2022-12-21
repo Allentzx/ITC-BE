@@ -13,8 +13,15 @@ namespace ITC.Data.Entities
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid Id { get; set; }
         public string? TotalPoint { get; set; }
-        [ForeignKey("Name")]
         public string? Name { get; set; }
+        [ForeignKey("Name")]
+        public Guid CoursePlanId { get; set; }
+        [ForeignKey("CoursePlanId")]
+        public Guid StudentId { get; set; }
+        [ForeignKey("StudentId")]
+        public virtual StudentInformation? Students { get; set; }
         public virtual Score? Scores { get; set; }
+        public virtual CoursePlans? CoursePlans { get; set; }
+
     }
 }

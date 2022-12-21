@@ -15,6 +15,8 @@ namespace ITC.Data.Entities
         public string? SkillName { get; set; }
         public string? Activity { get; set; }
         public string? Contents { get; set; }
+        public virtual ICollection<Exam>? Exams { get; set; }
+        public virtual ICollection<Project>? Projects { get; set; }
     }
 
 }

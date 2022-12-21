@@ -16,6 +16,7 @@ namespace ITC.Data.Entities
         public string? Percent { get; set; }
         public string? Minimumpass { get; set; }
         public Guid ParentId { get; set; }
+        public virtual ICollection<Exam>? Exams { get; set; }
 
     }
 }
