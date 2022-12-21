@@ -24,6 +24,8 @@ builder.Services.AddCors();
 
 builder.Services.AddMvc();
 
+builder.Services.AddMemoryCache();
+
 //Database
 builder.Services.AddDbContext<ITCDBContext>(options =>
      options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
@@ -40,7 +42,6 @@ builder.Services.AddTransient<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
 builder.Services.AddScoped<ILoginService, LoginService>();
 builder.Services.AddTransient<IUserContextService, UserContextService>();
-
 
 //Swagger
 builder.Services.AddSwaggerGen(c =>
